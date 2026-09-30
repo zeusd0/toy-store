@@ -1,0 +1,85 @@
+.hero {
+  background: linear-gradient(135deg, #ff9f1c 0%, #ffd166 100%);
+  border-radius: var(--radius-lg);
+  padding: 48px 32px;
+  color: white;
+  margin-bottom: 40px;
+}
+
+.hero__content {
+  max-width: 600px;
+}
+
+.hero__title {
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+.hero__subtitle {
+  font-size: 16px;
+  margin-bottom: 24px;
+  opacity: 0.95;
+}
+
+.hero__btn {
+  display: inline-block;
+  background-color: var(--text-main);
+  color: white;
+  padding: 12px 24px;
+  border-radius: var(--radius-md);
+  font-weight: 700;
+  transition: opacity 0.2s;
+}
+
+.hero__btn:hover {
+  opacity: 0.9;
+}
+
+.home-section {
+  margin-bottom: 48px;
+}
+
+.home-section__title {
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.category-card {
+  background-color: var(--card-bg);
+  padding: 20px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.category-card:hover {
+  border-color: var(--secondary-color);
+  transform: translateY(-2px);
+}
+
+.category-card h3 {
+  font-size: 16px;
+  color: var(--text-main);
+  margin-bottom: 8px;
+}
+
+.category-card p {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 24px;
+  align-items: stretch; /* Делает все карточки в ряду одинаковой высоты */
+}
